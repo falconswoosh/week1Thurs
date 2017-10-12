@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Hello friend!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    @* <p>'form-group' is used on <div>s, wrapping together each pair of <label> and <input> tags</p>
+    <p>'form-control' is used on the <input> tags. Among other things, it makes the length of the input fields adjust to your screen size.</p>
+    <p>'btn' is used on the <button> tag. You can also created colored buttons using these other Bootstrap button classes: btn-success, btn-warning, btn-info, and btn-danger. There are more here on the Bootstrap website.</p> *@
+
+      <br><br>
+    <h1>Fill in your name and your friend's name to create your custom greeting!</h1>
+    <form action='/greeting_card'>
+      <div class='form-group'>
+        <label for='sender'>Your name</label>
+        <input id='sender' name='sender' class='form-control' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='recipient'>Your friend's name</label>
+        <input id='recipient' name='recipient' class='form-control' type='text'>
+      </div>
+      <button type='submit' class='btn'>Go!</button>
+    </form>
+  </body>
+</html>
